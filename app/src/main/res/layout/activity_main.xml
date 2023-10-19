@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/mylayout">
+
+    <EditText
+        android:id="@+id/nom"
+        android:layout_width="355dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:hint="NOME ET PRENOM" />
+
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="355dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:hint="DATE DE NAISSANCE" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="355dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/editTextDateNaissance"
+        android:layout_gravity="center"
+        android:hint="EMAIL" />
+
+    <EditText
+        android:id="@+id/classe"
+        android:layout_width="355dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/editTextEmail"
+        android:layout_gravity="center"
+        android:hint="CLASS" />
+
+    <TextView
+        android:icon="@drawable/baseline_person_add_24"
+        android:id="@+id/btn"
+        android:layout_height="50dp"
+        android:layout_width="200dp"
+        android:layout_gravity="center"
+        android:layout_below="@+id/editTextClass"
+        android:layout_centerHorizontal="true"
+        android:background="#808080"
+         />
+</LinearLayout>
