@@ -7,20 +7,26 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:id="@+id/mylayout">
-
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_layout_nom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
     <EditText
         android:id="@+id/nom"
         android:layout_width="355dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
         android:hint="NOME ET PRENOM" />
-
+    </com.google.android.material.textfield.TextInputLayout>
     <EditText
-        android:id="@+id/date"
+        android:id="@+id/date_naissance"
         android:layout_width="355dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
-        android:hint="DATE DE NAISSANCE" />
+        android:hint="DATE DE NAISSANCE"
+        android:focusable="false"
+        android:clickable="true" />
+
 
     <EditText
         android:id="@+id/email"
@@ -30,13 +36,15 @@
         android:layout_gravity="center"
         android:hint="EMAIL" />
 
-    <EditText
+    <Spinner
         android:id="@+id/classe"
         android:layout_width="355dp"
         android:layout_height="50dp"
         android:layout_below="@+id/editTextEmail"
         android:layout_gravity="center"
         android:hint="CLASS" />
+
+
 
     <TextView
         android:icon="@drawable/baseline_person_add_24"
